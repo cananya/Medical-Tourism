@@ -1,0 +1,574 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body,h1,h2,h3,h4,h5,h6 {
+  font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;
+}
+
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+.btn{
+    height: 34px;
+}
+.col-md-6{
+  padding-bottom: 5%;
+}
+
+.list-group-item{
+  cursor: pointer;
+}
+
+/* *******************  Navigation Starts *******************  */
+
+.topnav {
+    font-size: 14px; 
+}
+
+.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.intro-header {
+    text-align: center;
+    color: #f8f8f8;
+    background: url(../img/main.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.intro-message {
+    position: relative;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.intro-message > h1 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+}
+
+.intro-divider {
+    width: 400px;
+    border-top: 1px solid #f8f8f8;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.intro-message > h3 {
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+}
+
+.cd-user-modal {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+ 
+.cd-user-modal.is-visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* *******************  Navigation Starts *******************  */
+/* *******************       INDEX HOVER     *******************  */
+
+.col-md-5 {
+position:relative;
+overflow:hidden;
+}
+.col-md-5 .textbox {
+width:550px;
+height:350px;
+margin-left:2%;
+position:absolute;
+top:0;
+left:0;
+margin-top:-360px;
+border-radius:5px;
+background-color: rgba(0,0,0,0.45);
+}
+.col-md-5:hover .textbox {
+margin-top:0;
+
+color: #ffffff;
+}
+.text {
+padding-top: 50px;
+margin-left: 32%;
+}
+.textbox {
+-webkit-transition: all 0.7s ease;
+transition: all 0.7s ease;
+}
+
+
+/*      *******************       FLIGHTS   *******************        */
+
+.price{
+    width: 5%;
+    float: left;
+    font-size: 2.5em;
+}
+.section_two{
+    float: left;
+margin-top: 5%;
+}
+.section_three{
+    float: left;
+margin-top: 5%;
+
+}
+.flight-tab-content{
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.logo {
+    width: 10%;
+     float: left;
+    margin-left: 10%;
+}
+ .flight_route{
+    width: 20%
+    float: left;
+    margin-top: 2%;
+    margin-left: 3%;
+ }
+
+ .flight_route .from{
+    float: left;
+    margin-left: 3%;
+ }
+
+ .flight_route .to{
+    float: left;
+    margin-left: 3%;
+ }
+.time{
+    width: 20%;
+    float: left;
+    margin-left: 3%;
+}
+ .glyphicon{
+    float: left;
+    margin-left: 3%;  
+ }
+.progress-bar{
+    float: left;
+     margin-top: 2%;
+    margin-left: 3%;
+}
+.time_span{
+    float: left;
+    margin-left: 3%;  
+}
+.flight_icons{
+    width: 10%;
+    float: left;
+    margin-left: 12%;
+}
+
+div.flight-tab-container{
+  z-index: 10;
+  background-color: #ffffff;
+  padding: 0 !important;
+  border-radius: 4px;
+  border:1px solid #ddd;
+  margin-top: 1%;
+  margin-left: 1%;
+  box-shadow: 0 6px 12px rgba(0,0,0,.175);
+  background-clip: padding-box;
+  opacity: 0.97;
+}
+div.flight-tab-menu{
+  padding-right: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+div.flight-tab-menu div.list-group{
+  margin-bottom: 0;
+}
+div.flight-tab-menu div.list-group>a{
+  margin-bottom: 0;
+}
+div.flight-tab-menu div.list-group>a .glyphicon,
+div.flight-tab-menu div.list-group>a .fa {
+  color: #3B5567;
+}
+div.flight-tab-menu div.list-group>a:first-child{
+  border-top-right-radius: 0;
+  -moz-border-top-right-radius: 0;
+}
+div.flight-tab-menu div.list-group>a:last-child{
+  border-bottom-right-radius: 0;
+  -moz-border-bottom-right-radius: 0;
+}
+div.flight-tab-menu div.list-group>a.active,
+div.flight-tab-menu div.list-group>a.active .glyphicon,
+div.flight-tab-menu div.list-group>a.active .fa{
+  background-color: #3B5567;
+  background-image: #3B5567;
+  color: #ffffff;
+}
+div.flight-tab-menu div.list-group>a.active:after{
+  content: '';
+  position: absolute;
+  left: 100%;
+  top: 40%;
+  margin-top: -13px;
+  border-left: 0;
+  border-bottom: 13px solid transparent;
+  border-top: 13px solid transparent;
+  border-left: 10px solid #3B5567;
+}
+
+div.flight-tab div.flight-tab-content:not(.active){
+  display: none;
+}
+
+/* cloud formation */
+
+#clouds{
+    padding: 50px 0;
+    background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+}
+
+.cloud {
+    width: 200px; height: 60px;
+    background: #fff;
+    -webkit-border-radius: 200px;
+    position: relative; 
+}
+.cloud:before, .cloud:after {
+    content: '';
+    background: #fff;
+    position: absolute; 
+    -webkit-border-radius: 100px;
+    transform: rotate(30deg);
+}
+.cloud:after {
+    width: 120px; height: 120px;
+    top: -55px; left: auto; right: 15px;
+}
+
+/*Time to animate*/
+.x1 {
+    -webkit-animation: moveclouds 15s linear infinite;
+
+}
+/*variable speed, opacity, and position of clouds for realistic effect*/
+.x2 {
+    left: 200px;
+    transform: scale(0.6);
+    -webkit-animation: moveclouds 25s linear infinite;
+  }
+
+.x3 {
+    left: -250px; top: -200px;
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+    -webkit-animation: moveclouds 20s linear infinite;
+}
+
+.x4 {
+    left: 470px; top: -250px;  
+    transform: scale(0.75);
+    opacity: 0.75;
+    -webkit-animation: moveclouds 18s linear infinite;
+}
+
+.x5 {
+    left: -150px; top: -150px;
+    transform: scale(0.8);
+    opacity: 0.8; /*opacity proportional to the size*/
+}
+
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-moz-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+@-o-keyframes moveclouds {
+    0% {margin-left: 1000px;}
+    100% {margin-left: -1000px;}
+}
+
+/*              HOTEL               */
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+header.carousel .item,
+header.carousel .item.active,
+header.carousel .carousel-inner {
+    height: 100%;
+}
+
+header.carousel .fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+/*      *******************       HOTEL HOVER     *******************        */
+
+.view {
+   width: 300px;
+   height: 250px;
+   margin: 2%;
+   float: left;
+   border: 10px solid #fff;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   box-shadow: 1px 1px 2px #e6e6e6;
+   cursor: default;
+   background: #fff url(../images/bgimg.jpg) no-repeat center center;
+}
+.view .mask,.view .content {
+   width: 300px;
+   height: 250px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 17px;
+   padding: 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+}
+.view p {
+   font-family: Georgia, serif;
+   font-style: italic;
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 10px 20px 20px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   padding: 7px 14px;
+   background: #000;
+   color: #fff;
+   text-transform: uppercase;s
+   box-shadow: 0 0 1px #000;
+}
+.view a.info: hover {
+   -webkit-box-shadow: 0 0 5px #000;
+   -moz-box-shadow: 0 0 5px #000;
+   box-shadow: 0 0 5px #000;
+}
+
+.view-first .mask {
+   opacity: 0;
+   background-color: rgba(219,127,8, 0.7);
+}
+
+.view-first p {
+   transform: translateY(100px);
+   opacity: 0;
+   transition: all 0.2s linear;
+}
+.view-first:hover img {
+   transform: scale(1.1,1.1);
+}
+.view-first a.info {
+   opacity: 0;
+   transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+
+   opacity: 1;
+}
+.view-first:hover h2,
+.view-first:hover p,
+.view-first:hover a.info {
+   opacity: 1;
+   transform: translateY(0px);
+}
+
+/*      *******************       HOTEL HOVER  Ends   *******************        */
+
+/*      *******************       TOP SPECIALITY    *******************        */
+
+.top_sp{
+    background-color: #2c3138;
+    clear:both;
+    background-size: cover;
+    overflow:hidden;
+    width:100%;
+    padding:40px 0 30px;
+    margin-top: 2%;
+}
+.top_sp h2{
+    font-size:36px;
+    font-family:'source_sans_prolight';
+    margin:0 0 20px;
+    padding:0;
+    color:#fff;
+    text-align:center;
+    font-weight:300
+}
+.top_sp ul{
+    display:block;
+    clear:both;
+    margin:0;
+    padding:0;
+    width:100%;
+    text-align:center
+}
+.top_sp ul li{
+    display:inline-block;
+    list-style:none;
+    text-align:center;
+    margin:0 20px;
+    position:relative;
+    cursor:pointer
+}
+.top_sp ul li p{
+    font-family:'source_sans_proregular';
+    text-decoration:none;
+    color:#fff;
+    font-size:16px;
+    margin:0;
+    padding:0
+}
+.top_sp ul li a img{
+width: 50%; 
+height:50%;
+}
+.top_sp ul li:hover span{
+    display:block;
+    position:absolute;
+    top:0;
+    width:100%;
+    left:0;
+    text-align:center
+}
+.top_sp ul li:hover p{
+    color:#819b06;
+    text-decoration:none;
+}
+.top_sp ul li a img:hover{
+    color:#819b06;
+    text-decoration:none;
+}
+.top_sp ul li:hover a{
+    text-decoration:none;
+}
+
+
+/*      *******************       FOOTER STARTS     *******************        */ 
+
+footer {
+    padding: 10px 0;
+    background-color: #222;
+    color: #9d9d9d;
+    font-size: 0.9em;
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
+
+.socialNetwork li{
+  display: inline;
+}
+
+.socialNetwork{
+  margin-left: -45px;
+}
+
+.row{
+  margin-left: -40px;
+}
+
+/*      *******************       MEDIA QUERY STARTS     *******************        */ 
+
+/*      *******************       MEDIA QUERY MOBILE STARTS     *******************        */ 
+
+@media(max-width:37.5em) {
+  .intro-message {
+    padding-bottom: 15%;
+  }
+
+  .intro-message > h1 {
+    font-size: 2.5em;
+    padding-top: 15%;
+  }
+
+  .col-md-5 img{
+    width: 347px;
+    height: 173px;
+  }
+
+  .banner h2 {
+    margin: 0;
+    text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+    font-size: 3em;
+  }
+ .container>.navbar-header {
+     margin-right: 0; 
+    margin-left: 0; 
+}
+  header.carousel .carousel {
+    height: 70%;
+  }
+
+  .footerWidget{
+    display: none;
+  }
+
+}
+
+/*      *******************       MEDIA QUERY TABLET STARTS     *******************        */ 
+
+
+@media(max-width:64em) {
+  .row{
+    margin-left: -20px;
+  }
+}
+

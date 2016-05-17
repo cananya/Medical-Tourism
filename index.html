@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <!-- Title -->
+    <title>Medical Tourism</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://webdesign9.in/js/bootstrap.min.js"></script>
+
+
+
+
+
+</head>
+
+<body>
+
+    <!-- Navigation Starts-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- Logo -->
+                <a class="navbar-brand hidden-xs" href="index.html"><i class="fa fa-heartbeat"></i>&#160;Medical Tourism</a>
+                <a class="navbar-brand visible-xs" href="index.html"><i class="fa fa-heartbeat"></i>&#160;Medical Tourism</a>
+                <!-- Search -->
+                <form class="navbar-form pull-left" role="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- Nav Bar -->
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="login.php">Sign In</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation Ends -->
+<script>
+
+function checkValues() {
+
+    var treatment = document.getElementById('treatment').value;
+    var country = document.getElementById('country').value; 
+
+    if(treatment == "0") {
+        alert('Select Treatment!');
+    } else if (country == "0") {
+        alert('Select Country!');
+    } else 
+
+    window.open("search.html","_self");
+}
+
+</script>
+    <!-- Header Starts-->
+    <div class="intro-header">
+        <div class="container">
+            <div class="row" style="margin-right: 1%; margin-left:1%;">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <h1>Search Treatment/Speciality</h1>
+                        <hr class="intro-divider">
+                            <!-- Split button -->
+                            <div class="btn-group">
+                                <select id = "treatment"  type="button" class="btn btn-danger" >Speciality/Treatment
+                                    <option value = "0"><a href="#">Treatment</a></option>
+                                    <option value = "1"><a href="#">Cancer Treatment</a></option>
+                                    <option value = "2"><a href="#">Cardiac Surgery</a></option>
+                                    <option value = "3"><a href="#">Cosmetic Surgery</a></option>
+                                </select>
+                            </div>
+
+                            <div class="btn-group" >
+                                <select id = "country" type="button" class="btn btn-danger" >Country
+                                    <option value = "0"><a href="#">Country</a></option>
+                                    <option value = "1"><a href="#">India</a></option>
+                                    <option value = "2"><a href="#">Malaysia</a></option>
+                                    <option value = "3"><a href="#">Turkey</a></option>
+                                </select>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" onclick="checkValues()" class="btn btn-danger" style="width:150%;"> Search</button>
+                                </button>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Ends-->
+
+
+<!-- About Us Carousel Starts-->
+<div id="myCarousel" class="carousel slide" style="background-color: #ffffff;">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+           <!-- Who are we? starts-->
+        <div class="item active" style="padding:20px;">
+            <div class="row" style="margin-right: 1%; margin-left:3%; text-align:justify;">
+                <div class="col-md-6">
+                    <h3>Who are we? </h3>
+                    <p>MedicalTourism.com is a free, confidential, independent resource for patients and industry providers. Our mission is to provide a central portal where patients, Medical Tourism providers, hospitals, clinics, employers and insurance companies and inform</p>
+                    <p>
+                    The Medical Tourism Association™ also referred to as Medical Travel Association, is the first membership based international non-profit trade association for the medical tourism and global healthcare industry made up of the top international hospitals, healthcare providers, medical travel facilitators and members with the common goal of promoting the highest level of quality of healthcare to patients in a global environment. </p>
+                    <a class="btn btn-primary" href="portfolio-item.html">Visit Website</i></a>
+                </div>
+                <div class="col-md-5"  style="margin-left:4%;">
+                    <img class="img-responsive img-hover" src="img/i1.jpg" alt="">
+                    <div class="textbox"><p class="text">Who are we</p></div>
+                </div>
+            </div>
+        </div>
+         <!-- Who are we? Ends-->
+      
+         <!-- How do we help you? Starts -->
+         <div class="item" style="padding:20px;">
+            <div class="row" style="margin-right: 1%; margin-left:3%; text-align:justify;">
+                <div class="col-md-6">
+                    <h3>How do we help you? </h3>
+                    <p><span class="glyphicon glyphicon-star-empty"></span>Explore and Research top Hospitals & Destinations &#160;&#160;
+                        <span class="glyphicon glyphicon-star-empty"></span>Make a package request&#160;&#160;<span class="glyphicon glyphicon-star-empty"></span>The Hospitals/ Providers will contact you directly to arrange your treatment&#160;&#160;<span class="glyphicon glyphicon-star-empty"></span>Compare prices and finalize your treatment with the Hospital/ Provider of your choice</p>
+                        <p>The Medical Tourism Association™ seeks to provide transparency in both quality of care and pricing. Every day we see more and more that the globalization of healthcare has created a very flat world. We exchange technology, information, communication, physicians and patients.  For one to one assistance with provider, sign up with your credentials and contact with provider to discuss about your queries. And its Free! We do not charge patients anything for our services.</p>
+                        <a class="btn btn-primary" href="portfolio-item.html">Visit Website</i></a>
+                        xaz
+                    </div>
+                        <div class="col-md-5" style="margin-left:4%;">
+                            <img class="img-responsive img-hover" src="img/main1.jpg" alt="">
+                            <div class="textbox"><p class="text">How do we help you?</p></div>
+                        </div>
+            </div>
+        </div>
+                <!-- How do we help you? Ends -->
+    </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+</div>
+<!-- About Us Carousel Ends-->
+
+<!-- Featured Medical Centers Starts-->
+
+<div id="myCarousel1" class="carousel slide" style="background-color: #f1f5f7;">
+     <!--/carousel-inner starts--> 
+    <div class="carousel-inner">
+        <!-- London Children's Hospitals -->
+        <div class="item active" style="padding:20px;">
+            <div class="row" style=" margin-left:3%;">
+                <div class="col-md-5" >
+                    <img class="img-responsive img-hover" src="img/med1.jpg" alt="">
+                    <div class="textbox">
+                        <p class="text">London Children's Hospitals</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-left:4%; text-align:justify;">
+                    <h3>Featured Medical Centers</h3>
+                    <h4>London Children's Hospitals</h4>
+                    <p>Children’s Hospital at London Health Sciences Centre, in London, Ontario is a world-class hospital with the latest technology and the best specialists, scientists and health professionals in Canada.</p>
+                    <p>Our hospital, staff and physicians are committed to patient and family-centred care and are recognized for providing specialized services and a multi-disciplinary approach to the care of children and their families.</p>
+                    <a class="btn btn-primary" href="http://www.lhsc.on.ca/About_Us/Childrens_Hospital/" target="_blank;">Visit Website</i></a>
+                </div>
+            </div>
+        </div>
+         <!-- London Children's Ends -->
+         <!-- Apollo Hospital Starts -->
+        <div class="item" style="padding:20px;">
+            <div class="row" style=" margin-left:3%;">
+                <div class="col-md-5" >
+                    <img class="img-responsive img-hover" src="img/med2.jpg" alt="">
+                    <div class="textbox">
+                        <p class="text">Apollo Hospital</p>
+                    </div>
+                </div>
+                <div class="col-md-6" style="margin-left:4%; text-align:justify;">
+                    <h3>Featured Medical Centers</h3>
+                    <h4>Apollo Hospital</h4>
+                    <p>Apollo Hospitals is widely recognized as the pioneer of private healthcare in India, and was the country’s first corporate hospital. The Group has emerged as the foremost integrated healthcare provider in Asia, with mature group companies that specialize in insurance, pharmacy, consultancy, clinics and many such key touch points of the ecosystem. The Apollo Group has touched the lives of over 45 million patients, from 121 countries.</p>
+                    <a class="btn btn-primary" href="https://www.apollohospitals.com/" target="_blank">Visit Website</i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/carousel-inner ends-->
+    <a class="left carousel-control" href="#myCarousel1" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+    <a class="right carousel-control" href="#myCarousel1" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+</div>
+<!-- Featured Medical Centers Ends-->
+
+<!-- Featured Travel Destination Starts-->
+<div id="myCarousel2" class="carousel slide">
+    <!-- Carousel items starts-->
+    <div class="carousel-inner">
+        <div class="item active" style="padding:20px;">
+            <!-- India starts-->
+            <div class="row"  style=" margin-left:3%; text-align:justify;">
+                <div class="col-md-6">
+                    <h3>Featured Travel Destination</h3>
+                    <h4>India</h4>
+                    <p>A recent report from Deloitte forecasts that India’s medical tourism market will grow to nearly $4 billion, doubling what it was just three years ago. According to Patients Beyond Borders, of the 250,000 international patients, the majority head to cities like Bangalore, Chennai, Hyderabad, Mumbai and New Delhi.</p>
+                    <p> Many people from other regions such as Africa, the Middle East, Canada and the U.S. are finding the cost savings too hard to pass up in India. Popular treatments in India consist of those for fertility, orthopedic, cardiac and oncology problems and organ transplants.</p>
+                    <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Medical_tourism_in_India" target="_blank">Visit Website</i></a>
+                </div>
+                <div class="col-md-5" style="margin-left:4%;">
+                    <img class="img-responsive img-hover" src="img/dest1.jpg" alt="">
+                    <div class="textbox">
+                        <p class="text">India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- India ends-->
+        <!-- Malaysia starts -->
+        <div class="item" style="padding:20px;">
+            <div class="row" style="margin-right: 1%; margin-left:1%;">
+                <div class="col-md-6"  style=" margin-left:3%; text-align:justify;">
+                    <h3>Featured Travel Destination</h3>
+                    <h4>Malaysia</h4>
+                    <p>With more than half a million medical tourists coming to the country each year, Malaysia ranks as one of the most health care-friendly spots for those looking to find help outside of their home country. Americans are attracted to the country’s large English-speaking population and strong infrastructure.</p>
+                    <p>Malaysia’s hospitals are also known for their sophisticated treatment for burn victims. In fact, Prince Court Medical Center in Kuala Lumpur was ranked as the number-one hospital for “patients without borders” by the Medical Travel Quality Alliance.</p>
+                    <a class="btn btn-primary" href="https://en.wikipedia.org/wiki/Medical_tourism_in_Malaysia" target="_blank">Visit Website</i></a>
+                </div>
+                <div class="col-md-5"  style="margin-left:4%;">
+                    <img class="img-responsive img-hover" src="img/dest2.jpg" alt="">
+                    <div class="textbox">
+                        <p class="text">Malaysia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev"><i class="fa fa-chevron-left fa-4"></i></a>
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next"><i class="fa fa-chevron-right fa-4"></i></a>
+</div>
+<!-- Featured Travel Destination Ends-->
+
+<!--  *******************  Top Specialties Starts ******************    -->
+
+<div class="top_sp">
+    <h2>Top Specialties</h2>
+    <ul>
+        <li>
+            <a href="cancer.html">
+                <img src="image/cancer.jpg" alt="cancer" >
+                <p>Cancer Treatment</p>
+            </a>
+        </li>
+        <li>
+            <a href="cardio.html">
+                <img src="image/cardiac.jpg" alt="cancer" >
+                <p>Cardiac Surgery</p>
+            </a>
+        </li>
+        <li>
+            <a href="cosmetic.html">
+                <img src="image/cosmetic.jpg" alt="cancer" >
+                <p>Cosmetic Surgery</p>
+            </a>
+        </li>
+        <li>
+            <a href="fertility.html">
+                <img src="image/fertility.jpg" alt="cancer" >
+                <p>Fertility Treatment</p>
+            </a>
+        </li>
+        <li>
+            <a href="neurology.html">
+                <img src="image/neuro.jpg" alt="cancer" >
+                <p>Neurology</p>
+            </a>
+        </li>
+        <li>
+            <a href="orthopedic.html">
+                <img src="image/ortho.jpg" alt="cancer" >
+                <p>Orthopedic Surgery</p>
+            </a>
+        </li> 
+    </ul>
+</div>
+<!--  *******************  Top Specialties Ends ******************    -->
+
+<!-- *******************  Footer Starts *******************  -->
+<footer id="footerWrapper">
+    <section id="mainFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footerWidget">
+                        <i class="fa fa-heartbeat"></i>&#160;Medical Tourism
+                        <p class="fpara"><a href="http://www.little-neko.com" title="Little Neko, website template creation">Medical Tourism</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practices and up-to-date web technologies to create great user experiences. We love what we do and we hope you do too! </p>
+            
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footerWidget">
+
+                        <h4>Medical Tourism</h4>
+                        <address>
+                            <p>320 Huntington Ave.<br>
+                                Boston, MA 02120-2125 USA <br>
+                                615.987.1234 <br>
+                              <a href="medicaltourism@neu.com">medicaltourism@neu.com</a> </p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footerWidget">
+                            <h4>Follow us, we are social</h4>
+                              <ul class="socialNetwork">
+                                <li><a href="#" ><img src="img/googleplus.png"></a></li>
+                                <li><a href="https://facebook.com/medicaltourismassociation/" target="_blank"><img src="image/facebookLogo.png"></a></li>
+                                <li><a href="#"><img src="img/twitter.png"></a></li>
+                                <li><a href="#"><img src="img/linkedin.png"></a></li>
+                                <li><a href="#"><img src="img/email.png"></a></li>
+                            </ul>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footerRights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> &copy; 2016 medicaltourism.com <a href="index.html" target="blank">All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</footer>
+
+<!-- *******************  Footer Ends *******************  -->
+</body>
+</html>

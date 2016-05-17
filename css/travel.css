@@ -1,0 +1,262 @@
+.info-text{
+  text-align: left;
+  width: 100%;
+}
+header, form{
+	padding: 4em 10%;
+}
+.tab_container{
+	padding: 2px 0;
+	background-color: #f1f5f7;
+    color: #3A5C71;
+    background-size: cover;
+}
+.myform{
+	width: 1076px;
+	height: 220px;
+}
+
+.tab-content{
+    margin-top: -50px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.trip button{
+	background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 2px;
+ 	width: 12%;
+    background-color: #fff;
+    color:#4D757F;
+    line-height: 2em;
+}
+
+
+.flight_from_to{
+	margin-top: 0.5%;
+    width: 30.2%;
+	float: left;
+}
+
+.flight_date{
+	margin-top: 0.5%;
+    width: 30.2%;
+	float: left;
+}
+
+.flight_person{
+	margin-top: 0.5%;
+    width: 22.2%;
+	float: left;
+}
+
+
+.flight_form-elements{
+	float: left;
+}
+.clear:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+label{
+	display: block;
+    margin-bottom: 8px;
+ }
+
+.flight_form_item input[type="text"]{
+	    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+ 	width: 80%;
+    background-color: #fff;
+    color:#8a97a0;
+    margin-bottom: 2%; 
+    line-height: 2em;
+}
+
+.awe-select-wrapper select {
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+ 	width: 40%;
+ 	height: 78%;
+    background-color: #fff;
+    color:#8a97a0;
+    margin-bottom: 10%; 
+}
+
+.flights_find button{
+	margin-top: 5%;
+	background: rgba(255,255,255,.1);
+    border: none;
+    width: 15%;
+    border-radius: 4px;
+    background-color: #fff;
+    color:#8a97a0;
+    line-height: 2em;
+
+}
+
+/*--effect-gid--*/
+.grid {
+	position: relative;
+	clear: both;
+	margin: 0 auto;
+	padding: 1em 0 4em;
+	    max-width: 1140px;
+	list-style: none;
+	text-align: center;
+}
+
+/*  Figure css */
+.grid h4 {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #ff6857;
+  text-transform: capitalize;
+  margin-bottom: 22px;
+}
+.grid figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.grid figure h2 {
+	word-spacing: -0.15em;
+	font-weight: 300;
+}
+.grid figure h2 span {
+  font-weight: 600;
+  color: #FFFFFF;
+  margin-left: 5px;
+}
+.grid figure h2 {
+	   font-size: 1.2em;
+}
+
+
+figure.effect-julia {
+	background: #83AFBC;
+}
+
+figure.effect-julia img {
+	max-width: none;
+	height: 260px;
+	transition: opacity 1s, transform 1s;
+	backface-visibility: hidden;
+}
+
+figure.effect-julia figcaption {
+	text-align: left;
+}
+
+figure.effect-julia h2 {
+	position: relative;
+	padding: 0.5em 0;
+}
+
+figure.effect-julia p {
+	display: inline-block;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
+	background: rgba(255,255,255,0.9);
+	color: #2f3238;
+	text-transform: none;
+	font-weight: 500;
+	font-size: 75%;
+	transition: opacity 0.35s, transform 0.35s;
+	transform: translate3d(-360px,0,0);
+}
+figure.effect-julia:hover img {
+	opacity: 0.4;
+}
+
+figure.effect-julia:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+/*--common style--*/
+.grid {
+  position: relative;
+  clear: both;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+}
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 2px 2px;
+  min-width: 376px;
+  max-height: 270px;
+  width: 1%;
+  height: auto;
+}
+
+.grid figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+	opacity: 0.8;
+	  width: 100%;
+}
+
+.grid figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+.grid figure figcaption,
+.grid figure figcaption > a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/*----responsive-menu-start--*/
+
+@media(max-width:64em){
+	
+	.grid figure figcaption {
+	  padding: 1em;
+	  font-size: 1.2em;
+	}
+	.grid figure {
+	  min-width: 236px;
+	  max-height: 168px;
+	}
+	figure.effect-julia p {
+	  margin: 0 0 0em;
+	  font-size: 52%;
+	}
+}
+@media(max-width:37.5em){
+	
+	.grid figure {
+	  min-width: 236px;
+	  max-height: 168px;
+	}
+	figure.effect-julia p {
+	  margin: 0 0 0em;
+	  font-size: 52%;
+	}
+	
+}

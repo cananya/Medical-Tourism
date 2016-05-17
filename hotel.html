@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Medical Tourism</title>
+    
+
+    <!-- Bootstrap Core CSS -->
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/travel.css" rel="stylesheet" type="text/css" media="all" />
+
+    <!-- heart glyphicon -->
+
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://webdesign9.in/js/jquery.js"></script>
+    <script src="http://webdesign9.in/js/bootstrap.min.js"></script>
+    <!-- Custom CSS -->  
+  
+</head>
+  <body style="padding-top: 50px;">
+
+    <!-- Navigation -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+   <div class="container">
+      <div class="navbar-header">
+         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         </button>
+         <a class="navbar-brand hidden-xs" href="index.html"><i class="fa fa-heartbeat"></i>&#160;Medical Tourism</a>
+         <a class="navbar-brand visible-xs" href="index.html"><i class="fa fa-heartbeat"></i>&#160;Medical Tourism</a>
+         <form class="navbar-form pull-left" role="search">
+            <div class="input-group">
+               <input type="text" class="form-control" placeholder="Search">
+               <div class="input-group-btn">
+                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+               </div>
+            </div>
+         </form>
+      </div>
+      <div class="navbar-collapse collapse">
+         <ul class="nav navbar-nav navbar-right">
+                  <li ><a href="index.html">Home</a></li>
+            <li class="active"><a href="travel.html">Travel</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="login.php">Sign In</a></li>
+         </ul>
+      </div>
+      <!--/.navbar-collapse -->
+   </div>
+</div>
+
+<div class="tab_container">
+  <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#menu1"><i class="fa fa-hospital-o"></i>&#160; Hotel</a></li>
+  </ul>
+
+<!-- hotel details -->
+ <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+     
+      <form class="myForm" id="hotelForm"  onsubmit="return check1();" action="hotel.html">
+
+               <!--     ###########   DATE    ###########  -->
+
+        <div class="flight_date">
+          <div class="flight_form_element" ><label>Check In</label>
+            <div class="flight_form_item">
+              <input type="text" id="datepicker1">
+            </div>
+          </div>
+
+             <div class="flight_form_element"><label>Rooms</label>
+              <div class="awe-select-wrapper">
+                <select class="awe-select"><option>1</option><option>2</option><option>3</option></select>
+                <i class="fa fa-caret-down"></i>
+              </div>
+          </div>
+
+        </div>
+
+
+        <!--     ###########  DESTINATION  ###########    -->
+
+        <div class="flight_from_to">
+           <div class="flight_form_element"><label>Check Out</label>
+            <div class="flight_form_item">
+              <input type="text" value="" id="datepicker2">
+            </div>
+          </div>
+
+          <div class="flight_form_element"><label>Adult</label>
+              <div class="awe-select-wrapper">
+                <select class="awe-select" id="adultHotel"><option value="0">0</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select>
+                <i class="fa fa-caret-down"></i>
+              </div>
+          </div>
+        </div>
+
+ 
+        <!--    ###########    CHILDREN/ADULT   ###########   -->
+
+        <div class="flight_person">
+
+
+          <div class="flight_form_element"><label class="flight_flying_from">Destination</label>
+            <div class="flight_form_item">
+                    <div class="ui-widget">
+         <input type="text"  id="automplete3">
+      </div>
+            </div>
+          </div>
+
+       
+
+          <div class="flight_form_element"><label>Chlildren</label>
+              <div class="awe-select-wrapper">
+                <select class="awe-select"><option>0</option><option>1</option><option>2</option><option>3</option></select>
+                <i class="fa fa-caret-down"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="flights_find">
+          <button type="submit"  > Find Hotels</button>
+        </div>
+
+<script>
+function check1()
+            {
+              if (!hotelForm.automplete3.value)
+                {
+                alert ("Please enter destination!");
+                return false;
+                } 
+
+              else  if (!hotelForm.datepicker1.value)
+                {
+                alert ("All dates are mandatory!");
+                return (false);
+                }  
+
+                else  if (!hotelForm.datepicker2.value)
+                {
+                alert ("All dates are mandatory!");
+                return (false);
+                }  
+
+              else  if (hotelForm.adultHotel.value == 0)
+                {
+                alert ("Enter no of Guests");
+                return (false);
+                } 
+
+                return (true);}
+</script> 
+
+      </form>
+    </div>
+</div>
+
+<div class="container">
+ 
+
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">HOTELS
+                    <small>Mumbai</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-8">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="img/hotel2.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/hotel1.jpg" alt="">
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/hotel4.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h3>THE TAJ MAHAL PALACE</h3>
+                <img src="img/3.5.png">
+                    <p>The history of Mumbai and The Taj Mahal Palace are dramatically intertwined. The hotel is Mumbai's first harbour landmark (built 21 years before the Gateway of India) and the site of the first licensed bar in the city. For more than a century, the Taj has played an intrinsic part in the life of the city, hosting Maharajas, dignitaries and eminent personalities from across the globe.</p>
+                <h5>HOTEL ADDRESS</h5>
+                <ul>
+                    <li>Apollo Bunder</li>
+                    <li>Mumbai - 400 001</li>
+                    <li>Maharashtra, India</li>
+                    <li>Telephone: +91 22 6665 3366  |  Facsimile: +91 22 6665 0300 /08/09</li>
+                </ul>
+                <a class="btn btn-primary" href="portfolio-item.html">Book Room</i></a>
+                <div><span class="glyphicons glyphicons-wifi-alt"></span></div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <!-- Related Projects Row -->
+        <div class="row">
+
+            <div class="col-lg-12">
+                <h3 class="page-header">Recommended Hotels</h3>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                 <div class="view view-first">
+                    <img class="img-responsive img-hover img-related" src="img/hotel5.jpg" alt="">
+                     <div class="mask">
+                        <h2>Pangkor Laut Resort</h2>
+                        <p>5-star Hotel Pangkor Laut IslandPangkor, PK, Malaysia <br>+60 3-2783 1000</p>
+                        <a href="http://www.pangkorlautresort.com/" target="_blank" class="info">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+
+                 <div class="view view-first">
+                    <img class="img-responsive img-hover img-related" src="img/h2.jpg" alt="">
+                     <div class="mask">
+                        <h2>Hotel Amira Istanbul</h2>
+                        <p>4-star Hotel Kucuk Ayasofya No: 43 Sultanahmet 34122 Turkey<br>90 212 516 16 40</p>
+                        <a href="http://www.hotelamira.com/" target="_blank" class="info">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                 <div class="view view-first">
+                    <img class="img-responsive img-hover img-related" src="img/h3.jpg" alt="">
+                     <div class="mask">
+                        <h2>Amari Phuket</h2>
+                        <p>4.4 star Hotel 2 Meun Ngern Road Patong Beach 83150, Thailand<br>+66 76 340 106</p>
+                        <a href="http://www.amari.com/phuket/" target="_blank" class="info">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-3 col-xs-6">
+                      <div class="view view-first">
+                    <img class="img-responsive img-hover img-related" src="img/h3.jpg" alt="">
+                     <div class="mask">
+                        <h2>Amari Phuket</h2>
+                        <p>4.4 star Hotel 2 Meun Ngern Road Patong Beach 83150, Thailand<br>+66 76 340 106</p>
+                        <a href="http://www.amari.com/phuket/" target="_blank" class="info">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- /.row -->
+
+        <hr>
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li>
+                        <a href="#">3</a>
+                    </li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- end hotel details -->
+
+
+    <!-- Footer -->
+<footer id="footerWrapper">
+    <section id="mainFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="footerWidget">
+                        <i class="fa fa-heartbeat"></i>&#160;Medical Tourism
+                        <p><a href="http://www.little-neko.com" title="Little Neko, website template creation">Medical Tourism</a> is a web design and development studio. We build responsive HTML5 and CSS3 templates, integrating best web design practices and up-to-date web technologies to create great user experiences. We love what we do and we hope you do too! </p>
+            
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="footerWidget">
+
+                        <h4>Medical Tourism</h4>
+                        <address>
+                            <p>320 Huntington Ave.<br>
+                                Boston, MA 02120-2125 USA <br>
+                                615.987.1234 <br>
+                              <a href="medicaltourism@neu.com">medicaltourism@neu.com</a> </p>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="footerWidget">
+                            <h4>Follow us, we are social</h4>
+                              <ul class="socialNetwork">
+                                <li><a href="#" ><img src="img/googleplus.png"></a></li>
+                                <li><a href="https://facebook.com/medicaltourismassociation/" target="_blank"><img src="image/facebookLogo.png"></a></li>
+                                <li><a href="#"><img src="img/twitter.png"></a></li>
+                                <li><a href="#"><img src="img/linkedin.png"></a></li>
+                                <li><a href="#"><img src="img/email.png"></a></li>
+                            </ul>        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footerRights">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p> &copy; 2016 medicaltourism.com <a href="index.html" target="blank">All rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+</footer>
+
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
